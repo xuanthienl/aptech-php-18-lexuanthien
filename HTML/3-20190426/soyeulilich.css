@@ -1,0 +1,76 @@
+body {
+  width: 1000px;
+  margin: 0 auto;
+  font-family: sans-serif;
+
+
+}
+
+.phan-mot {
+  background-color: brown;
+  height: 200px;
+  padding:10px 10px;
+  text-align:center;
+}
+
+.phan-hai {
+  background-color: forestgreen;
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+}
+
+.phan-hai-trai {
+  color: rgb(247, 247, 247);
+  background-color: darkblue;
+  width: 30%;
+  /*padding:10px 25px;*/
+
+}
+
+.phan-hai-trai-1 {
+  background-color: darkcyan;
+  width: 100%;
+  height: 200px;
+  text-align:center;
+  padding: 10px 0px;
+ 
+}
+
+.phan-hai-trai-2 {
+  background-color: darkgray;
+  width: 100%;
+  height: 800px;
+}
+
+.phan-hai-phai {
+  color: gray;
+  background-color: darkolivegreen;
+  width: 70%;
+
+}
+
+.phan-ba {
+  background-color:gray;
+  height: 50px;
+  width: 100%;
+}
+/*.div-mot {
+  height: 150px;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.div-mot-mot {
+    background-color: brown;
+    width: 35%;
+    height: 100%;
+}
+
+.div-mot-hai {
+    background-color: lawngreen;
+    width: 55%;
+    height: 100%;
+}*/
