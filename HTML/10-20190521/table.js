@@ -21,12 +21,10 @@ for (var i = 0; i < arrayth.length; i = i + 1) {
 var tbody = document.createElement('tbody');
 table.appendChild(tbody);
 
-var tr = document.createElement('tr');
-tbody.appendChild(tr);
 
 
 var data = {
-    "users": [{
+    users: [{
         "id": 10,
         "name": "Ethyl Medhurst",
         "email": "noah.hand@example.org",
@@ -53,14 +51,34 @@ var data = {
     ]
   };  
 
-var arraytd = data.users[0];
-console.log(arraytd);  
-for (var i = 0; i < arraytd.length; i = i + 1) {
+
+for (var i = 0; i < data.users.length; i = i + 1) {
     console.log(i);
+
+    var tr = document.createElement('tr');
+
+    var th = document.createElement('th');
+    var tdNoidung = document.createTextNode(data.users[i].id);
+    th.appendChild(tdNoidung);
+    tr.appendChild(th);
+
+    var th = document.createElement('th');
+    var tdname = document.createTextNode(data.users[i].name);
+    th.appendChild(tdname);
+    tr.appendChild(th);
+
     var td = document.createElement('td');
-    var ContentTD = document.createTextNode(arraytd[i]);
-    td.appendChild(ContentTD);
+    var tdname = document.createTextNode(data.users[i].email);
+    td.appendChild(tdname);
     tr.appendChild(td);
+
+    var td = document.createElement('td');
+    var tdname = document.createTextNode(data.users[i].password);
+    td.appendChild(tdname);
+    tr.appendChild(td);
+
+    tbody.appendChild(tr);
+    
 }  
 
 
