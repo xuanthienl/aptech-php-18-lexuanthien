@@ -65,4 +65,5 @@ function loadDoc() {
     xhttp.send();
 }
 
-
+// ẩn nút khi hiển thị dử liệu
+// document.getElementById('an-nut').style.display = 'none';
